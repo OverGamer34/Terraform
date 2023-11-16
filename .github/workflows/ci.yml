@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      TF_CLI_ARGS: "-input=false"
-      TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
       PASSWORD: ${{ secrets.PASSWORD }}
 
     steps:
