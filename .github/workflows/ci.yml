@@ -51,7 +51,4 @@ jobs:
       working-directory: path/to/your/terraform/directory
 
 
-git remote add origin https://github.com/OverGamer34/Terraformv.git
-git push -u origin master
-
 
