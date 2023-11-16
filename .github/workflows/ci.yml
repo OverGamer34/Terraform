@@ -29,11 +29,11 @@ jobs:
 
     - name: Terraform Validate
       run: terraform validate
-      #working-directory: /mnt/c/TERAFORM/Terraform
+      working-directory: path/to/your/terraform/directory
 
     - name: Terraform Plan
       run: terraform plan -out=tfplan
-      #working-directory: /mnt/c/TERAFORM/Terraform
+      working-directory: /mnt/c/TERAFORM/Terraform
 
     - name: Wait for Manual Approval
       id: approval
