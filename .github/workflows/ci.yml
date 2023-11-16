@@ -21,19 +21,19 @@ jobs:
     - name: Set up Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-        terraform_version: 1.0.0
+        terraform_version: 1.6.0
 
     - name: Terraform Init
       run: terraform init
-      working-directory: path/to/your/terraform/directory
+      working-directory: /mnt/c/TERAFORM/Terraform
 
     - name: Terraform Validate
       run: terraform validate
-      working-directory: path/to/your/terraform/directory
+      working-directory: /mnt/c/TERAFORM/Terraform
 
     - name: Terraform Plan
       run: terraform plan -out=tfplan
-      working-directory: path/to/your/terraform/directory
+      working-directory: /mnt/c/TERAFORM/Terraform
 
     - name: Wait for Manual Approval
       id: approval
